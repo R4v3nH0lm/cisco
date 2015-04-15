@@ -5,7 +5,8 @@ account = Account('username', 'password')
 
 hosts_file = open('hostfile', 'r+')
 for ipaddress in hosts_file:
-   
+    if ipaddress[0] == "#":
+        break
 	conn = SSH2()                       
 	conn.connect(ipaddress)
 	conn.login(account)
