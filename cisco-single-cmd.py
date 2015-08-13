@@ -7,7 +7,7 @@ import datetime
 
 #User info
 command = raw_input('Command? ')
-account = Account('username', 'password')  
+account = Account('ncmservice', 'eKuNTJ4v')  
 date = str(datetime.date.today())
 
 #Translate hostfile and connect to IP
@@ -37,4 +37,4 @@ for host in hosts_file:
         conn.send('exit\r')               
         conn.close()
 
-hosts_file.close() 
+hosts_file.close()
